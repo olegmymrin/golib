@@ -1,4 +1,4 @@
-package test
+package gorm_test
 
 import (
 	"os"

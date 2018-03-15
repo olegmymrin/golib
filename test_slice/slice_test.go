@@ -1,8 +1,10 @@
 package test_slice
 
 import (
-	"testing"
 	"fmt"
+	"testing"
+
+	"github.com/stretchr/testify/require"
 )
 
 func dummy(d []int) {
@@ -31,5 +33,14 @@ func TestSubSlice(t *testing.T) {
 	fmt.Println(c)
 	d = append(b, c...)
 	fmt.Println(b, c, d)
+}
 
+func makeSlice(s []int) {
+	s = []int{1, 2, 3}
+}
+
+func TestPassSlice(t *testing.T) {
+	var s []int
+	makeSlice(s)
+	require.Equal(t, []int{1, 2, 3}, s)
 }
