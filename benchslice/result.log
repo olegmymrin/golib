@@ -1,0 +1,6 @@
+goos: darwin
+goarch: amd64
+BenchmarkSortLeghth10Size10
+BenchmarkSortLeghth10Size10-8             286905              3711 ns/op
+PASS
+ok      _/Users/oleg/repos/gotests/benchslice   1.350s
